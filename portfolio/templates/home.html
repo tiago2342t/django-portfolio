@@ -1,7 +1,8 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-<h1>Home</h1>
+{% load static %}
+<img src="{% static 'portfolio/profile.jpg' %}" alt="Foto de perfil">
 
 {% for project in projects %}
 <h2>{{ project.title }}</h2>
